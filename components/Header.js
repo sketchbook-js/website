@@ -9,7 +9,8 @@ const Header = () => (
   <>
     <style jsx>{`
       .header {
-        background: radial-gradient(circle at center, #fcf, #f0f);
+        background: radial-gradient(circle at center, #f0f, #c0f);
+        /* background: #f0f; */
         padding: 100px 0;
       }
       .heading {

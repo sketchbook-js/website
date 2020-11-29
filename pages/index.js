@@ -44,6 +44,9 @@ const HomePage = () => (
         color: #000;
         padding: 0 3px;
       }
+      img {
+        display: block;
+      }
     `}</style>
     <Stack gap={40}>
       <Header />
@@ -65,7 +68,7 @@ const HomePage = () => (
               src="/screenshot.png"
               style={{
                 borderRadius: 3,
-                boxShadow: "0 0 10px rgb(0 0 0 / 0.2)",
+                boxShadow: "0 0 20px rgb(0 0 0 / 0.2)",
                 maxWidth: "100%",
               }}
             />
