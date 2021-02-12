@@ -1,21 +1,21 @@
 import { Children } from "react";
 
-const List = ({ children, tag: Component = "ul" }) => (
+const List = ({ children, tag: Component = "ul", style = "block" }) => (
   <>
     <style jsx>{`
       .list {
         display: grid;
-        gap: 20px;
+        gap: ${style === "block" ? "20px" : "10px"};
       }
       .item {
-        margin-left: 1rem;
+        margin-left: 2rem;
       }
     `}</style>
-    <ol className="list">
+    <Component className="list">
       {Children.map(children, (child) => (
         <li className="item">{child}</li>
       ))}
-    </ol>
+    </Component>
   </>
 );
 

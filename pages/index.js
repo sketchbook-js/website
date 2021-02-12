@@ -22,7 +22,7 @@ const HomePage = () => (
         font-size: 300%;
       }
       h2 {
-        font-size: 200%;
+        font-size: 240%;
       }
       a {
         color: inherit;
@@ -48,21 +48,28 @@ const HomePage = () => (
         display: block;
       }
     `}</style>
-    <Stack gap={40}>
+    <Stack gap={80}>
       <Header />
       <main>
         <Container>
           <Stack gap={40}>
-            <Stack gap={10}>
+            <Stack gap={20}>
               <h2>How it works</h2>
               <p>
-                Sketchbook.js is a web design tool that lets you design with
-                realy components. It's installed as a Node.js package directly
-                into your codebase and runs in a browser. That means you can
-                always be using the latest versions of components — no more
-                tedious legwork keeping your design system in sync with
-                production.
+                Sketchbook.js is a web design tool that lets you create
+                compositions using live components. It's installed directly into
+                your codebase and runs in your browser.
               </p>
+              <List tag="ul" style="inline">
+                <>
+                  <strong>Designers</strong> always have the latest components
+                  developers have implemented.
+                </>
+                <>
+                  <strong>Developers</strong> always have the latest
+                  compositions that designers have produced.
+                </>
+              </List>
             </Stack>
             <img
               src="/screenshot.png"
@@ -72,7 +79,7 @@ const HomePage = () => (
                 maxWidth: "100%",
               }}
             />
-            <Stack gap={10}>
+            <Stack gap={20}>
               <h2>Getting started</h2>
               <List tag="ol">
                 <Stack gap={10}>

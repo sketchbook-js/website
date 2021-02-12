@@ -6,17 +6,23 @@ const Footer = () => (
   <>
     <style jsx>{`
       .footer {
-        background: linear-gradient(0deg, #90c, #f0f);
-        background: #c0f;
-        color: #fff;
-        padding: 50px 0;
+        background: #eee;
+        padding: 40px 0;
+      }
+      @media (max-width: 800px) {
+        /* */
       }
     `}</style>
     <footer className="footer">
       <Container>
-        <a href="https://vercel.com?utm_source=sketchbook-js&utm_campaign=oss">
-          <img src="/powered-by-vercel.svg" />
-        </a>
+        <Stack gap={20} align="center" justify="center" direction="horizontal">
+          <a href="https://coloydb.com?utm_source=sketchbook-js&utm_campaign=oss">
+            <img src="/colonydb-sponsor.svg" />
+          </a>
+          <a href="https://vercel.com?utm_source=sketchbook-js&utm_campaign=oss">
+            <img src="/powered-by-vercel.svg" />
+          </a>
+        </Stack>
       </Container>
     </footer>
   </>
