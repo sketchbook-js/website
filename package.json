@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "test": "prettier -c {components,pages}/**/*.js",
-    "sketchbook": "yarn esbuild sketchbook/config.jsx --bundle --loader:.js=jsx --outfile=sketchbook/config.js --watch --inject:sketchbook/react-shim.js & sketchbook start"
+    "sketchbook:start": "yarn esbuild sketchbook/config.jsx --bundle --loader:.js=jsx --outfile=sketchbook/config.js --inject:sketchbook/react-shim.js && sketchbook start sketchbook/example.json",
+    "sketchbook:build": "yarn esbuild sketchbook/config.jsx --bundle --loader:.js=jsx --outfile=sketchbook/config.js --inject:sketchbook/react-shim.js && sketchbook build sketchbook/example.json"
   },
   "dependencies": {
     "esbuild": "^0.11.16",
@@ -29,7 +30,7 @@
     "arrowParens": "always"
   },
   "devDependencies": {
-    "@sketchbook-js/sketchbook": "0.3.0-1",
+    "@sketchbook-js/sketchbook": "^0.3.0-4",
     "prettier": "^2.2.1"
   }
 }

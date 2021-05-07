@@ -176,10 +176,10 @@
   resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-10.0.3.tgz#276bec60eae18768f96baf8a52f668f657f50ab4"
   integrity sha512-XtzzPX2R4+MIyu1waEQUo2tiNwWVEkmObA6pboRCDTPOs4Ri8ckaIE08lN5A5opyF6GVN+IEq/J8KQrgsePsZQ==
 
-"@sketchbook-js/sketchbook@0.3.0-1":
-  version "0.3.0-1"
-  resolved "https://registry.yarnpkg.com/@sketchbook-js/sketchbook/-/sketchbook-0.3.0-1.tgz#57a439aa8fb6552f29c8e02eb5e377cb52ba792c"
-  integrity sha512-UOvAKDD+9di1CfgXQBQ6TYEtNbl4EB30f/VUgPBLmh4PBeyRl1eoBBdIBOo+AbXG7nidNAwkFlpSZsK3YVAW5w==
+"@sketchbook-js/sketchbook@^0.3.0-4":
+  version "0.3.0-4"
+  resolved "https://registry.yarnpkg.com/@sketchbook-js/sketchbook/-/sketchbook-0.3.0-4.tgz#2b45c44ec95dc5e662afa37af2703cd599bad94d"
+  integrity sha512-KUOQZBFsLJpach8/QPF7NEYz1uyTK+kor7NiHFoNcj61+g6lGw0OHetSgZGIxhreZ5FVtUxJyO92V3gw+lh//g==
   dependencies:
     arg "^4.1.3"
     babel-plugin-transform-flow-strip-types "^6.22.0"

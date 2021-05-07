@@ -6,30 +6,30 @@
       "type": "SketchbookComponent",
       "component": "Header",
       "name": "Header",
-      "x1": 43,
-      "y1": 479,
-      "x2": 931,
-      "y2": 780
+      "x1": 39,
+      "y1": 267,
+      "x2": 927,
+      "y2": 568
     },
     {
       "id": "b197a751-2c2f-4e53-ac1e-db3b446e6665",
       "type": "SketchbookComponent",
       "component": "Brandmark",
       "name": "Brandmark",
-      "x1": 93,
-      "y1": 243,
-      "x2": 249,
-      "y2": 431
+      "x1": 43,
+      "y1": 30,
+      "x2": 199,
+      "y2": 218
     },
     {
       "id": "1d8011d9-7639-4b3c-8471-f4e7f225aaae",
       "type": "SketchbookComponent",
       "component": "Text list",
       "name": "Text list",
-      "x1": 426,
-      "y1": 329,
-      "x2": 470.46875,
-      "y2": 401,
+      "x1": 263,
+      "y1": 62,
+      "x2": 307.46875,
+      "y2": 134,
       "options": {
         "text": "Item 1\nItem 2\nItem 3"
       }
