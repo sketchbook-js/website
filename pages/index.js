@@ -89,7 +89,7 @@ const HomePage = () => (
                 <Stack gap={10}>
                   <p>
                     Create the default <code>sketchbook/config.js</code> and{" "}
-                    <code>sketchbook/designs/example.json</code> files:
+                    <code>sketchbook/example.json</code> files:
                   </p>
                   <pre>yarn sketchbook init</pre>
                 </Stack>
@@ -98,6 +98,8 @@ const HomePage = () => (
                     Run on <code>http://localhost:3000/</code>:
                   </p>
                   <pre>yarn sketchbook start</pre>
+                  <p>The above command is shorthand for the command below. You can specify a design file by replacing <code>sketchbook/example.json</code> with a relative path to your chosen design file.</p>
+                  <pre>yarn sketchbook start sketchbook/example.json</pre>
                 </Stack>
               </List>
             </Stack>
