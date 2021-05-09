@@ -16,7 +16,7 @@ const Footer = () => (
     <footer className="footer">
       <Container>
         <Stack gap={20} align="center" justify="center" direction="horizontal">
-          <a href="https://coloydb.com?utm_source=sketchbook-js&utm_campaign=oss">
+          <a href="https://colonydb.com/?utm_source=sketchbook-js&utm_campaign=oss">
             <img src="/colonydb-sponsor.svg" />
           </a>
           <a href="https://vercel.com?utm_source=sketchbook-js&utm_campaign=oss">
