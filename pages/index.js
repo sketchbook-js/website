@@ -97,9 +97,8 @@ const HomePage = () => (
                   <p>
                     Run on <code>http://localhost:3000/</code>:
                   </p>
-                  <pre>yarn sketchbook start</pre>
-                  <p>The above command is shorthand for the command below. You can specify a design file by replacing <code>sketchbook/example.json</code> with a relative path to your chosen design file.</p>
-                  <pre>yarn sketchbook start sketchbook/example.json</pre>
+                  <pre>yarn sketchbook start {"<path/to/design/file.json>"}</pre>
+                  <p>Replace <code>{"<path/to/design/file.json>"}</code> with <code>sketchbook/example.json</code> to run it with an example design file.</p>
                 </Stack>
               </List>
             </Stack>
