@@ -8,7 +8,7 @@ const Header = () => (
   <>
     <style jsx>{`
       .header {
-        background: #f0f;
+        background: #ff4bff;
         padding: 60px 0;
       }
       .heading {

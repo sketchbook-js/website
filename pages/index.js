@@ -27,16 +27,16 @@ const HomePage = () => (
       }
       a {
         color: inherit;
-        text-decoration-color: #f0f;
+        text-decoration-color: #ff4bff;
       }
       a:hover {
-        color: #f0f;
+        color: #ff4bff;
       }
       pre {
         background: #000;
         background: linear-gradient(0deg, #222, #333);
         border-radius: 3px;
-        color: #f0f;
+        color: #ff4bff;
         padding: 10px 20px;
       }
       code {
