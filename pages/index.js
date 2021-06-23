@@ -97,8 +97,127 @@ const HomePage = () => (
                   <p>
                     Run on <code>http://localhost:3000/</code>:
                   </p>
-                  <pre>yarn sketchbook start {"<path/to/design/file.json>"}</pre>
-                  <p>Replace <code>{"<path/to/design/file.json>"}</code> with <code>sketchbook/example.json</code> to run it with an example design file.</p>
+                  <pre>
+                    yarn sketchbook start {"<path/to/design/file.json>"}
+                  </pre>
+                  <p>
+                    Replace <code>{"<path/to/design/file.json>"}</code> with{" "}
+                    <code>sketchbook/example.json</code> to run it with an
+                    example design file.
+                  </p>
+                </Stack>
+              </List>
+            </Stack>
+            <Stack gap={20}>
+              <h2>Creating components</h2>
+              <Stack gap={10}>
+                <p>
+                  In your config file (<code>sketchbook/config.js</code> by
+                  default), add a component to the components property array in{" "}
+                  <code>Sketchbook.config</code>. A component is an object with
+                  the properties described below.
+                </p>
+              </Stack>
+
+              <h3>Required options</h3>
+              <List>
+                <Stack gap={10}>
+                  <p>
+                    <code>type</code> (required): The type of component being
+                    created. You can create instances of these in your
+                    composition. Ideally, these are based on your design
+                    guidelines. E.g. <code>Small Button</code>,{" "}
+                    <code>Medium Button</code>, <code>Large Button</code>,{" "}
+                    <code>Heading 1</code> etc. For example,
+                  </p>
+                  <pre>
+                    {`{
+  ...,
+  type: "Heading 1"
+}`}
+                  </pre>
+                </Stack>
+                <Stack gap={10}>
+                  <p>
+                    <code>render</code> (required): A function that receives the
+                    object created in the <code>init</code> property function
+                    and an <code>element</code> object. Using the render
+                    function below, inserting this component into your
+                    composition will initialise it with text "Lorem Ipsum" (as
+                    specified in the <code>text</code> option in the optional
+                    <code>init</code> property). Modify the element{" "}
+                    <code>style</code> and <code>innerHTML</code> to create your
+                    desired component.
+                  </p>
+                  <pre>
+                    {`{
+  ...,
+  render: ({ element, options: { text } }) => {
+    element.style = "height: 100%; display: flex; align-items: center;";
+    element.innerHTML = \`
+      <h1 style="margin: 0;">\${text}</h1>
+    \`
+  }
+}`}
+                  </pre>
+                </Stack>
+              </List>
+
+              <h3>Optional options</h3>
+              <List>
+                <Stack gap={10}>
+                  <p>
+                    <code>options</code> (optional): Describes the data type and
+                    label of the data that is passed into the component. For
+                    example,
+                  </p>
+                  <pre>
+                    {`{
+  ...,
+  options: [{
+    key: "text", // A globally unique identifier for this option.
+    label: "Text", // A label to describe the input.
+    input: {
+      type: "String" // Input type. 'String', 'PlainText' are currently supported.
+    }
+  }]
+}`}
+                  </pre>
+                </Stack>
+                <Stack gap={10}>
+                  <p>
+                    <code>init</code> (optional): A function that sets initial
+                    option values for the component by returning an object that
+                    is passed to the required <code>render</code> property. For
+                    example,
+                  </p>
+                  <pre>
+                    {`{
+  ...,
+  init: () => ({
+    options: {
+      text: "Lorem ipsum"
+    }
+  })
+}`}
+                  </pre>
+                </Stack>
+                <Stack gap={10}>
+                  <p>
+                    <code>validate</code> (optional): A function that takes in
+                    the options object and validates its values. The below
+                    example is used to validate the option with key{" "}
+                    <code>text</code>, making sure it is not empty.
+                  </p>
+                  <pre>
+                    {`{
+  ...,
+  validate: ({ text }) =>
+    text.trim().length === 0
+      ? [{ key: "text", message: "Text must be provided" }]
+      : null
+}`}
+                  </pre>
                 </Stack>
               </List>
             </Stack>
