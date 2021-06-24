@@ -4,6 +4,7 @@ const Head = ({
   title,
   description,
   image,
+  imageAltText,
   canonical,
   twitter,
   orgUrl,
@@ -14,6 +15,12 @@ const Head = ({
     <title>{title}</title>
     <meta name="twitter:title" content={title} />
     <meta property="og:title" content={title} />
+    {imageAltText ? (
+      <>
+        <meta property="og:image:alt" content={imageAltText} />
+        <meta property="twitter:image:alt" content={imageAltText} />
+      </>
+    ) : null}
     {description ? (
       <>
         <meta name="description" content={description} />

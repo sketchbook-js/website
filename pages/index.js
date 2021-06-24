@@ -50,17 +50,16 @@ const HomePage = () => (
       }
     `}</style>
     <Head
-      title={"Sketchbook.js: the web design tool that lives in your repo."}
+      title={"Sketchbook.js"}
       description={
         "A web design tool that lets you create compositions using live components from your code."
       }
       canonical={"https://sketchbookjs.com"}
       // A relative image path does not work for twitter images.
       // The full domain of the image must be used: https://stackoverflow.com/questions/60870641/twitterimage-meta-tag-not-showing-image-for-its-twitter-card
-      image="https://sketchbookjs.com/screenshot.png"
-      orgUrl={"https://sketchbookjs.com"}
-      orgLogo={"/logo192.png"}
-      icon={"/favicon.ico"}
+      image={"https://sketchbookjs.com/screenshot.png"}
+      imageAltText={"Sketchbook-js design tool screenshot"}
+      icon={"https://sketchbookjs.com/favicon.ico"}
     />
     <Stack gap={80}>
       <Header />
