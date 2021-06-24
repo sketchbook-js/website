@@ -110,14 +110,7 @@ const HomePage = () => (
                   <p>
                     Run on <code>http://localhost:3000/</code>:
                   </p>
-                  <pre>
-                    yarn sketchbook start {"<path/to/design/file.json>"}
-                  </pre>
-                  <p>
-                    Replace <code>{"<path/to/design/file.json>"}</code> with{" "}
-                    <code>sketchbook/example.json</code> to run it with an
-                    example design file.
-                  </p>
+                  <pre>yarn sketchbook start example.json</pre>
                 </Stack>
               </List>
             </Stack>
