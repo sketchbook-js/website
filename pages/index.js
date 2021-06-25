@@ -58,7 +58,7 @@ const HomePage = () => (
       // A relative image path does not work for twitter images.
       // The full domain of the image must be used: https://stackoverflow.com/questions/60870641/twitterimage-meta-tag-not-showing-image-for-its-twitter-card
       image={"https://sketchbookjs.com/screenshot.png"}
-      imageAltText={"Sketchbook-js design tool screenshot"}
+      imageAltText={"Sketchbook.js design tool screenshot"}
       icon={"https://sketchbookjs.com/favicon.ico"}
     />
     <Stack gap={80}>
@@ -110,7 +110,7 @@ const HomePage = () => (
                   <p>
                     Run on <code>http://localhost:3000/</code>:
                   </p>
-                  <pre>yarn sketchbook start example.json</pre>
+                  <pre>yarn sketchbook start sketchbook/example.json</pre>
                 </Stack>
               </List>
             </Stack>
