@@ -1,5 +1,6 @@
 import Container from "../components/Container";
 import Footer from "../components/Footer";
+import Head from "../components/Head";
 import Header from "../components/Header";
 import List from "../components/List";
 import Stack from "../components/Stack";
@@ -48,6 +49,18 @@ const HomePage = () => (
         display: block;
       }
     `}</style>
+    <Head
+      title={"Sketchbook.js"}
+      description={
+        "A web design tool that lets you create compositions using live components from your code."
+      }
+      canonical={"https://sketchbookjs.com"}
+      // A relative image path does not work for twitter images.
+      // The full domain of the image must be used: https://stackoverflow.com/questions/60870641/twitterimage-meta-tag-not-showing-image-for-its-twitter-card
+      image={"https://sketchbookjs.com/screenshot.png"}
+      imageAltText={"Sketchbook.js design tool screenshot"}
+      icon={"https://sketchbookjs.com/favicon.ico"}
+    />
     <Stack gap={80}>
       <Header />
       <main>
@@ -97,8 +110,7 @@ const HomePage = () => (
                   <p>
                     Run on <code>http://localhost:3000/</code>:
                   </p>
-                  <pre>yarn sketchbook start {"<path/to/design/file.json>"}</pre>
-                  <p>Replace <code>{"<path/to/design/file.json>"}</code> with <code>sketchbook/example.json</code> to run it with an example design file.</p>
+                  <pre>yarn sketchbook start sketchbook/example.json</pre>
                 </Stack>
               </List>
             </Stack>
