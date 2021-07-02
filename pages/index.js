@@ -33,7 +33,6 @@ const HomePage = () => (
         color: #ff4bff;
       }
       pre {
-        background: #000;
         background: linear-gradient(0deg, #222, #333);
         border-radius: 3px;
         color: #ff4bff;
@@ -47,6 +46,31 @@ const HomePage = () => (
       }
       img {
         display: block;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          color-scheme: dark light;
+          color: rgb(228, 228, 228);
+          background-color: #121212;
+        }
+
+        img {
+          filter: brightness(0.8) contrast(1.2);
+        }
+
+        a {
+          text-decoration-color: #df67df;
+        }
+
+        a:hover {
+          text-decoration-color: #df67df;
+        }
+
+        pre {
+          background: linear-gradient(0deg, #333, #444);
+          color: #df67df;
+        }
       }
     `}</style>
     <Head

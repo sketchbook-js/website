@@ -19,6 +19,20 @@ const Header = () => (
       .tagline {
         font-size: 18px;
       }
+
+      @media (prefers-color-scheme: dark) {
+        .header {
+          background: #df67df;
+        }
+        .heading {
+          text-shadow: 3px 3px #121212;
+        }
+
+        .tagline,
+        .heading {
+          color: rgb(248, 248, 248);
+        }
+      }
     `}</style>
     <header className="header">
       <Container>

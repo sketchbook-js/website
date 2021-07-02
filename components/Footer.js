@@ -12,6 +12,11 @@ const Footer = () => (
       @media (max-width: 800px) {
         /* */
       }
+      @media (prefers-color-scheme: dark) {
+        .footer {
+          background: rgb(170, 170, 170);
+        }
+      }
     `}</style>
     <footer className="footer">
       <Container>
