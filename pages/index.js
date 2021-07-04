@@ -14,6 +14,9 @@ const HomePage = () => (
         margin: 0;
         padding: 0;
       }
+      :root {
+        --primary-color: #f0f;
+      }
       body {
         font-family: sans-serif;
         font-size: 16px;
@@ -27,15 +30,15 @@ const HomePage = () => (
       }
       a {
         color: inherit;
-        text-decoration-color: #ff4bff;
+        text-decoration-color: var(--primary-color);
       }
       a:hover {
-        color: #ff4bff;
+        color: var(--primary-color);
       }
       pre {
         background: linear-gradient(0deg, #222, #333);
         border-radius: 3px;
-        color: #ff4bff;
+        color: var(--primary-color);
         padding: 10px 20px;
       }
       code {
@@ -52,24 +55,10 @@ const HomePage = () => (
         :root {
           color-scheme: dark light;
           color: rgb(228, 228, 228);
-          background-color: #121212;
         }
 
         img {
           filter: brightness(0.8) contrast(1.2);
-        }
-
-        a {
-          text-decoration-color: #df67df;
-        }
-
-        a:hover {
-          text-decoration-color: #df67df;
-        }
-
-        pre {
-          background: linear-gradient(0deg, #333, #444);
-          color: #df67df;
         }
       }
     `}</style>

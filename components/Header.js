@@ -8,7 +8,7 @@ const Header = () => (
   <>
     <style jsx>{`
       .header {
-        background: #ff4bff;
+        background: var(--primary-color);
         padding: 60px 0;
       }
       .heading {
@@ -21,9 +21,6 @@ const Header = () => (
       }
 
       @media (prefers-color-scheme: dark) {
-        .header {
-          background: #df67df;
-        }
         .heading {
           text-shadow: 3px 3px #121212;
         }
