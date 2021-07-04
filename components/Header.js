@@ -21,13 +21,9 @@ const Header = () => (
       }
 
       @media (prefers-color-scheme: dark) {
-        .heading {
-          text-shadow: 3px 3px #121212;
-        }
-
         .tagline,
         .heading {
-          color: rgb(248, 248, 248);
+          color: black;
         }
       }
     `}</style>
