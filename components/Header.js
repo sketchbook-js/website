@@ -8,7 +8,7 @@ const Header = () => (
   <>
     <style jsx>{`
       .header {
-        background: #f0f;
+        background: var(--primary-color);
         padding: 60px 0;
       }
       .heading {
@@ -18,6 +18,13 @@ const Header = () => (
       }
       .tagline {
         font-size: 18px;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .tagline,
+        .heading {
+          color: black;
+        }
       }
     `}</style>
     <header className="header">

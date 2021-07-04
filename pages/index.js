@@ -14,6 +14,9 @@ const HomePage = () => (
         margin: 0;
         padding: 0;
       }
+      :root {
+        --primary-color: #f0f;
+      }
       body {
         font-family: sans-serif;
         font-size: 16px;
@@ -27,16 +30,15 @@ const HomePage = () => (
       }
       a {
         color: inherit;
-        text-decoration-color: #f0f;
+        text-decoration-color: var(--primary-color);
       }
       a:hover {
-        color: #f0f;
+        color: var(--primary-color);
       }
       pre {
-        background: #000;
         background: linear-gradient(0deg, #222, #333);
         border-radius: 3px;
-        color: #f0f;
+        color: var(--primary-color);
         padding: 10px 20px;
       }
       code {
@@ -47,6 +49,17 @@ const HomePage = () => (
       }
       img {
         display: block;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          color-scheme: dark light;
+          color: rgb(228, 228, 228);
+        }
+
+        img {
+          filter: brightness(0.8) contrast(1.2);
+        }
       }
     `}</style>
     <Head
