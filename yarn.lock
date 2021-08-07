@@ -1540,7 +1540,7 @@
     use-state-snapshots "^0.0.3"
     uuid "^8.3.1"
 
-"@storybook/addon-actions@6.3.4", "@storybook/addon-actions@^6.3.4":
+"@storybook/addon-actions@6.3.4":
   version "6.3.4"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-6.3.4.tgz#3dfd9ee288ce3569c6aa53092f283a39460167eb"
   integrity sha512-+fTTaWepSaMeMD96zsNap0AcFUu3xyGepIucNMvkpfJfQnyYzr7S0qyjpsW84DLKHPcjujNvOOi98y7cAKV6tw==
@@ -1663,24 +1663,6 @@
     core-js "^3.8.2"
     regenerator-runtime "^0.13.7"
     storybook-addon-outline "^1.4.1"
-    ts-dedent "^2.0.0"
-
-"@storybook/addon-links@^6.3.4":
-  version "6.3.4"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-6.3.4.tgz#2ec5b7532e67303b7ec693ecc22a6c4feac93cb3"
-  integrity sha512-qIey6kNcrg43vsmMmEGXGMbO1Wjqc6hbcMaLstUn3xN29vZnjUcv7PVPFlJsBBYIxW7gXBtRmqjdxN5UD0bvZA==
-  dependencies:
-    "@storybook/addons" "6.3.4"
-    "@storybook/client-logger" "6.3.4"
-    "@storybook/core-events" "6.3.4"
-    "@storybook/csf" "0.0.1"
-    "@storybook/router" "6.3.4"
-    "@types/qs" "^6.9.5"
-    core-js "^3.8.2"
-    global "^4.4.0"
-    prop-types "^15.7.2"
-    qs "^6.10.0"
-    regenerator-runtime "^0.13.7"
     ts-dedent "^2.0.0"
 
 "@storybook/addon-measure@^2.0.0":

@@ -34,9 +34,7 @@
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@sketchbook-js/sketchbook": "^0.3.0-4",
-    "@storybook/addon-actions": "^6.3.4",
     "@storybook/addon-essentials": "^6.3.4",
-    "@storybook/addon-links": "^6.3.4",
     "@storybook/react": "^6.3.4",
     "babel-loader": "^8.2.2",
     "prettier": "^2.2.1"
