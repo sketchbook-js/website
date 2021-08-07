@@ -36,6 +36,7 @@ const HomePage = () => (
         color: var(--primary-color);
       }
       pre {
+        background: #000;
         background: linear-gradient(0deg, #222, #333);
         border-radius: 3px;
         color: var(--primary-color);
