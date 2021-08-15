@@ -9,8 +9,8 @@
     "test": "prettier -c {components,pages}/**/*.js",
     "sketchbook:start": "yarn esbuild sketchbook/config.jsx --bundle --loader:.js=jsx --outfile=sketchbook/config.js --inject:sketchbook/react-shim.js && sketchbook start sketchbook/example.json",
     "sketchbook:build": "yarn esbuild sketchbook/config.jsx --bundle --loader:.js=jsx --outfile=sketchbook/config.js --inject:sketchbook/react-shim.js && sketchbook build sketchbook/example.json",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook:start": "start-storybook -p 6006",
+    "storybook:build": "build-storybook"
   },
   "dependencies": {
     "esbuild": "^0.11.16",
