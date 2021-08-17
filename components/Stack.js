@@ -7,6 +7,7 @@ const Stack = ({
   children,
   gap = 0,
   justify = "stretch",
+  alignItems = "stretch",
   align = "stretch",
   direction = "vertical",
   tag: Component = "div",
@@ -19,6 +20,7 @@ const Stack = ({
         justify-content: ${justify};
         align-content: ${align};
         grid-auto-flow: ${DIRECTION_MAP[direction]};
+        align-items: ${alignItems};
       }
     `}</style>
     <Component className="stack">{children}</Component>

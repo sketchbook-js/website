@@ -13,7 +13,7 @@ const SocialLink = ({ icon: Icon, href, label, color = "#000" }) => (
       }
     `}</style>
     <a className="social-link" href={href}>
-      <Stack tag="span" gap={5} direction="horizontal">
+      <Stack tag="span" gap={5} alignItems="center" direction="horizontal">
         <Icon color={"reset"} />
         {label}
       </Stack>

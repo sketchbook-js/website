@@ -39,7 +39,7 @@ const Header = () => (
                   Bringing design and development together
                 </p>
               </Stack>
-              <Stack justify="start">
+              <Stack justify="start" alignItems="center">
                 <SocialLink
                   href="https://github.com/sketchbook-js/sketchbook"
                   icon={GitHubIcon}
