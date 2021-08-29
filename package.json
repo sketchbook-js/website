@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "test": "prettier -c {components,pages}/**/*.js",
-    "sketchbook:start": "yarn sketchbook:build && sketchbook start sketchbook/example.json -p 3001",
-    "sketchbook:build": "webpack --config sketchbook/webpack.config.js --mode production",
+    "sketchbook:start": "webpack --config sketchbook/webpack.config.js --mode development && sketchbook start sketchbook/example.json -p 3001",
+    "sketchbook:build": "webpack --config sketchbook/webpack.config.js --mode production && sketchbook build sketchbook/example.json",
     "storybook:start": "start-storybook -p 6006",
     "storybook:build": "build-storybook"
   },
