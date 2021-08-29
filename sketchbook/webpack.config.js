@@ -11,20 +11,11 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ["babel-loader"],
-      },
-      {
-        test: /\.css$/,
-        include: path.resolve(__dirname, "../"),
-        use: [
-          {
-            loader: require("styled-jsx/webpack").loader,
-          },
-        ],
+        loader: "babel-loader",
       },
     ],
   },
-  resolve: {
-    extensions: ["*", ".js", ".jsx"],
+  optimization: {
+    minimize: false,
   },
 };
