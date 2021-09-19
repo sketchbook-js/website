@@ -5,20 +5,18 @@ import GitHubIcon from "./GitHubIcon";
 import Stack from "./Stack";
 
 export default {
-  title: "SocialLink",
+  title: "components/SocialLink",
   component: SocialLink,
 };
 
-const Template = (args) => (
+export const Default = () => (
   <Stack justify="start">
-    <SocialLink {...args} />
+    <SocialLink
+      icon={GitHubIcon}
+      href="https://github.com/sketchbook-js/sketchbook"
+      label="GitHub"
+      color="#000"
+    />
   </Stack>
 );
 
-export const Github = Template.bind({});
-Github.args = {
-  icon: GitHubIcon,
-  href: "https://github.com/sketchbook-js/sketchbook",
-  label: "GitHub",
-  color: "#000",
-};
